@@ -1,11 +1,12 @@
-# Retro sign
-
-- Approx. completion time: **1 hour**
-- Deliverables: **1 HTML file, 1 CSS file, 1 JS file**
-
+---
+summary: 'Create a retro sign that turns on/off when a button is pressed.'
+time: '1 hour'
+deliverables: '1 HTML file, 1 CSS file, 1 JS file'
 ---
 
-**Create a retro sign that turns on/off when a button is pressed.**
+# Retro sign
+
+## Overview
 
 - *Fork this repository.*
 - When the button is clicked, lines are drawn to the text and the colour engages.
@@ -16,7 +17,7 @@
 
 ## Details
 
-- *Line drawing:* animate the `stroke-dasharray` property, only the first number, animate from `0` to `480`.
+- *Line drawing:* animate the `stroke-dasharray` property, only the first number, animate from `0` to `480px`.
 
 ---
 
@@ -24,7 +25,7 @@
 
 Visually match the images in the “screenshots” folder and create the interaction shown in the linked video.
 
-- [Final screenshots in the “screenshots” folder.](screenshots)
+- Final screenshots in the “screenshots” folder.
 - [**Watch this video to see how it interacts.**](https://youtu.be/HWScDjAr5JE)
 
 ---
@@ -33,7 +34,6 @@ Visually match the images in the “screenshots” folder and create the interac
 
 Drop this folder into your Markbot application. Make sure to fix all the errors. And submit to Canvas using Markbot.
 
----
 ---
 
 ## Optional challenges
