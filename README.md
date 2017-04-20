@@ -17,7 +17,7 @@ deliverables: '1 HTML file, 1 CSS file, 1 JS file'
 
 ## Details
 
-- *Line drawing:* animate the `stroke-dasharray` property, only the first number, animate from `0` to `480px`.
+- *Line drawing:* animate the `stroke-dashoffset` property from `480px` to `0`.
 
 ---
 

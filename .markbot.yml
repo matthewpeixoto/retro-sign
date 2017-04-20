@@ -30,6 +30,7 @@ css:
       - '\:nth-child\('
       - '@keyframes'
       - 'stroke-dasharray'
+      - 'stroke-dashoffset'
       - 'animation'
       - 'transition'
       - 'transition-delay'
@@ -60,7 +61,7 @@ functionality:
         let oldBtnFill = css(btnFill).fill;
         let path = $('.lines path');
         let oldAnimName = css(path).animationName;
-        let oldStrokeDasharray = css(path).strokeDasharray;
+        let oldStrokeDashoffset = css(path).strokeDashoffset
         let letterE = $('.engage path:first-child');
         let oldLetterEFill = css(letterE).fill;
 
@@ -77,7 +78,7 @@ functionality:
 
         on('.lines path', 'animationend', function (err, ev) {
           if (err) fail('The animation on the lines never ends—check that they have an animation');
-          if (oldStrokeDasharray == css(path).strokeDasharray) fail('The `stroke-dasharray` doesn’t change in the animation');
+          if (oldStrokeDashoffset == css(path).strokeDashoffset) fail('The `stroke-dashoffset` doesn’t change in the animation');
           totalEvents--;
           checkPass();
         });

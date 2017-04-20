@@ -22,5 +22,6 @@ svg {
 }
 
 .lines path {
-  stroke-dasharray: 0, 480px;
+  stroke-dasharray: 480px;
+  stroke-dashoffset: 480px;
 }
