@@ -17,11 +17,58 @@ svg {
   width: 100%;
 }
 
-.btn {
-  cursor: pointer;
-}
+/* lines */
 
 .lines path {
   stroke-dasharray: 480px;
   stroke-dashoffset: 480px;
+}
+
+.engaged .lines path {
+  animation: draw 400ms linear forwards;
+}
+
+@keyframes draw {
+
+  0% {
+    stroke-dashoffset: 480px;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+
+}
+
+/* engage */
+
+.engaged .engage path {
+  fill: #f60;
+  transition: all 400ms linear;
+  transition-delay: 400ms;
+}
+
+.engage path:nth-child(2),
+.engage path:nth-child(5) {
+  transition-delay: 500ms;
+}
+
+.engage path:nth-child(3),
+.engage path:nth-child(4) {
+  transition-delay: 600ms;
+}
+
+/* btn */
+
+.btn {
+  cursor: pointer;
+}
+
+.btn path:last-child {
+  transition: fill 200ms ease-in-out;
+}
+
+.btn:hover path:last-child,
+.engaged .btn path:last-child {
+  fill: #f60;
 }
